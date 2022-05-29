@@ -15,10 +15,10 @@ const Assignment=()=> {
       setBox(box.filter(({ id }) => id !== text));
     }
   };
-  return (
+  return ( 
     <div className={style.mainContainer}>
       <div className={style.assignmentContainer}>
-        <h1 className={style.header}>Assignment</h1>
+        <h1 className={style.header}>Ball Shooter</h1>
         <div className={style.assignmentContent}>
           <div className={style.assignmentContentLeft}>
             {leftBox.length > 0 &&
