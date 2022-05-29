@@ -8,6 +8,12 @@ const Assignment=()=> {
   const [text, setText] = useState("");
   const [leftBox, setLeftBox] = useState([]);
   const [box, setBox] = useState(data);
+
+  // Taking value from input and then filter it accordingly send it to operational box after that 
+  // we filter the id and delete it from middle box so it will never duplicate in operational box then
+  //  we will set the data in state and map it in operational box after that we just reverse the same thing
+  // it will gives the desired output
+  
   const handleSubmit = () => {
     const newBox = box.filter(({ id }) => id === text);
     if (newBox.length !== 0) {
