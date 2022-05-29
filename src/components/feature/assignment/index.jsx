@@ -38,7 +38,7 @@ const Assignment=()=> {
                       leftBox.filter(({ id }, i) => id !== leftBox[index].id)
                     );
                   }}
-                ></div>
+                >{id}</div>
               ))}
           </div>
           <div className={style.assignmentContentMiddle}>
@@ -50,11 +50,11 @@ const Assignment=()=> {
                     backgroundColor: color,
                   }}
                   key={index}
-                ></div>
+                >{id}</div>
               ))}
           </div>
           <div className={style.assignmentContentRight}>
-            <InputField onChange={(e) => setText(e.target.value)} />
+            <InputField onChange={(e) => setText(e.target.value)} placeholder="Enter number" />
             <Button children={"Submit"} onClick={handleSubmit} />
           </div>
         </div>
